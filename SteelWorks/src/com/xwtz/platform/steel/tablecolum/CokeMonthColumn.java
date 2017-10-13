@@ -1,10 +1,8 @@
 package com.xwtz.platform.steel.tablecolum;
 
 public enum CokeMonthColumn {
-	Day("Day",String.class), 
-	Cokefactory("Cokefactory", String.class),
-	Monthfreightindex("Monthfreightindex", String.class);
-
+	Month("Month", String.class), Cokefactory("Cokefactory", String.class), Monthfreightindex("Monthfreightindex",
+			String.class);
 
 	private final String columnName;
 	private final Class<?> columnClass;

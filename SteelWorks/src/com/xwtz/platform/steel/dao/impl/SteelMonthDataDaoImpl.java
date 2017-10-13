@@ -7,7 +7,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.xwtz.platform.steel.bean.SteelSum;
 import com.xwtz.platform.steel.bean.SteelworksMonth;
 import com.xwtz.platform.steel.dao.IndexDataDao;
 import com.xwtz.platform.steel.util.JDBCUtil;
@@ -28,7 +27,7 @@ public class SteelMonthDataDaoImpl implements IndexDataDao {
 			while (rs.next()) {
 				SteelworksMonth steelworksMonth = new SteelworksMonth();
 				String steelworks = rs.getString("steelworks");
-				String day = rs.getString("day");
+				String day = rs.getString("month");
 				String freightindex = rs.getString("month_freightindex");
 				steelworksMonth.setDay(day);
 				steelworksMonth.setSteelworks(steelworks);

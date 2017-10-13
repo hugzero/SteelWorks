@@ -1,7 +1,7 @@
 package com.xwtz.platform.steel.bean;
 
 public class CokeMonth {
-	private String cokefactory,day,monthfreightindex;
+	private String cokefactory, Month, monthfreightindex;
 
 	public String getCokefactory() {
 		return cokefactory;
@@ -12,11 +12,11 @@ public class CokeMonth {
 	}
 
 	public String getDay() {
-		return day;
+		return Month;
 	}
 
-	public void setDay(String day) {
-		this.day = day;
+	public void setDay(String Month) {
+		this.Month = Month;
 	}
 
 	public String getMonthfreightindex() {
@@ -26,13 +26,14 @@ public class CokeMonth {
 	public void setMonthfreightindex(String monthfreightindex) {
 		this.monthfreightindex = monthfreightindex;
 	}
+
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(cokefactory).append("——");
-		sb.append(day).append("——");
+		sb.append(Month).append("——");
 		sb.append(monthfreightindex).append("——");
 		return sb.toString();
 	}
-	
+
 }

@@ -8,8 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.xwtz.platform.steel.bean.CokeMonth;
-import com.xwtz.platform.steel.bean.SteelSum;
-import com.xwtz.platform.steel.bean.SteelworksMonth;
 import com.xwtz.platform.steel.dao.IndexDataDao;
 import com.xwtz.platform.steel.util.JDBCUtil;
 
@@ -29,7 +27,7 @@ public class CokeMonthDataDaoImpl implements IndexDataDao {
 			while (rs.next()) {
 				CokeMonth cokeMonth = new CokeMonth();
 				String cokefactory = rs.getString("cokefactory");
-				String day = rs.getString("day");
+				String day = rs.getString("month");
 				String freightindex = rs.getString("monthfreightindex");
 				cokeMonth.setDay(day);
 				cokeMonth.setCokefactory(cokefactory);

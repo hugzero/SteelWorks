@@ -1,10 +1,8 @@
 package com.xwtz.platform.steel.tablecolum;
 
 public enum SteelworksMonthColumn {
-	Day("Day",String.class), 
-	Steelworks("Steelworks", String.class),
-	Monthfreightindex("Monthfreightindex", String.class);
-
+	Month("Month", String.class), Steelworks("Steelworks", String.class), Monthfreightindex("Monthfreightindex",
+			String.class);
 
 	private final String columnName;
 	private final Class<?> columnClass;

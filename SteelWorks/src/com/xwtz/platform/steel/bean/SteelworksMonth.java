@@ -1,7 +1,7 @@
 package com.xwtz.platform.steel.bean;
 
 public class SteelworksMonth {
-	private String steelworks, day, monthfreightindex;
+	private String steelworks, month, monthfreightindex;
 
 	public String getSteelworks() {
 		return steelworks;
@@ -12,11 +12,11 @@ public class SteelworksMonth {
 	}
 
 	public String getDay() {
-		return day;
+		return month;
 	}
 
-	public void setDay(String day) {
-		this.day = day;
+	public void setDay(String month) {
+		this.month = month;
 	}
 
 	public String getMonthfreightindex() {
@@ -31,7 +31,7 @@ public class SteelworksMonth {
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(steelworks).append("——");
-		sb.append(day).append("——");
+		sb.append(month).append("——");
 		sb.append(monthfreightindex).append("——");
 		return sb.toString();
 	}

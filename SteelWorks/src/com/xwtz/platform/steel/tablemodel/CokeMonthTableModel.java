@@ -23,7 +23,7 @@ public class CokeMonthTableModel extends TableDataModel {
 
 	public void addCokeMonth(CokeMonth cokeMonth) {
 		Object[] row = new Object[getColumnCount()];
-		row[CokeMonthColumn.Day.ordinal()] = cokeMonth.getDay();
+		row[CokeMonthColumn.Month.ordinal()] = cokeMonth.getDay();
 		row[CokeMonthColumn.Cokefactory.ordinal()] = cokeMonth.getCokefactory();
 		row[CokeMonthColumn.Monthfreightindex.ordinal()] = cokeMonth.getMonthfreightindex();
 		addRow(row);

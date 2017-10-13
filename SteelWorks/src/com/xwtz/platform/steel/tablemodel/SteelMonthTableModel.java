@@ -23,7 +23,7 @@ public class SteelMonthTableModel extends TableDataModel {
 
 	public void addSteelworksMonth(SteelworksMonth steelworksMonth) {
 		Object[] row = new Object[getColumnCount()];
-		row[SteelworksMonthColumn.Day.ordinal()] = steelworksMonth.getDay();
+		row[SteelworksMonthColumn.Month.ordinal()] = steelworksMonth.getDay();
 		row[SteelworksMonthColumn.Steelworks.ordinal()] = steelworksMonth.getSteelworks();
 		row[SteelworksMonthColumn.Monthfreightindex.ordinal()] = steelworksMonth.getMonthfreightindex();
 		addRow(row);
