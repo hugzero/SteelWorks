@@ -30,7 +30,7 @@ public class CokeMonth {
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append(cokefactory).append("——");
+		sb.append(cokefactory).append("-——");
 		sb.append(Month).append("——");
 		sb.append(monthfreightindex).append("——");
 		return sb.toString();
